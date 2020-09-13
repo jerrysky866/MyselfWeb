@@ -76,10 +76,12 @@ article{
 }
 
 article.Top{
+	width: 100%;
+	height: 900px;
 }
 article.Top >div#Mid{
 	width: 100%;
-	height: auto;
+	height: 50%;
 	margin-bottom: -23px;
 }
 article.Top >div#Mid > div{
@@ -93,12 +95,12 @@ article.Top >div#Mid > div{
 article.Top >div#Mid > img#myself{
 	width: 259px;
 	height: 259px;
-	margin: -224px 41% 0 40%;
+	margin: -185px 41% 0 40%;
 	border-radius: 100%;
 }
 article.Top >div#Bot{
 	width: 100%;
-	height: auto;
+	height: 50%;
 	background-color: #000;
 }
 article.Top >div#Bot > div#Name{
@@ -188,8 +190,7 @@ article.About >div#bot >div#footer{
 	padding-top: 0.5%;
 }
 article.About >div#bot >div#footer >a{
-	width: 18px;
-	height: 18px;
+
 }
 article.About >div#bot >div#footer >a >div{
 	width: 18px;
@@ -210,10 +211,32 @@ article.About >div#bot{
 }
 
 article.About >div#bot >article{
-
+	width: 65%;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 2%;
 }
 
-
+article.About >div#bot >article >div#left{
+	width: 9.12%;
+	height: 100%;
+	float: left;
+}
+article.About >div#bot >article >div#left >h1{
+	font-size: 80px;
+	line-height: 96px
+}
+article.About >div#bot >article >div#right{
+	width: 90.88%;
+	height: 100%;
+	float: left;
+}
+article.About >div#bot >article >div#right >p{
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 18px;
+}
 
 
 footer{
@@ -224,4 +247,9 @@ footer{
 	bottom: 0px;
 	left: 0px;
 
+}
+footer >div{
+	width: 100%;
+	height: 5px;
+	background-color: #00ebf4;
 }

@@ -39,8 +39,21 @@ $(function(){
 		text="#aboutPicLight"+t;
 		$(text).css("background-color","#444444");
 		$(".aboutPic").attr("src","./images/about" + t +".png");
+		if(t<=2){
+			a=2;
+		}
+		else if(t==3)
+		{
+			a=4;
+		}
+		else{
+			a=3;
+		}
+		text="#aboutP"+a;
+		$(text).css("color","yellow");
 		clearInterval(intervalID);
 		intervalID = setInterval(changePic, 4000);
+		setTimeout(function(){$(text).css("color","#fff");},4000);
 	});
 
 
