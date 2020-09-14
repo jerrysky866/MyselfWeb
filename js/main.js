@@ -50,7 +50,7 @@ $(function(){
 			a=3;
 		}
 		text="#aboutP"+a;
-		$(text).css("color","yellow");
+		$(text).css("color","#00ebf4");
 		clearInterval(intervalID);
 		intervalID = setInterval(changePic, 4000);
 		setTimeout(function(){$(text).css("color","#fff");},4000);
