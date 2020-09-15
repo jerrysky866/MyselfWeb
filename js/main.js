@@ -19,7 +19,7 @@ $(function(){
 		}
 		$(text2).css("background-color","#ffffff");
 		$(text1).css("background-color","#444444");
-		$(".aboutPic").fadeOut(1000,function(){$(".aboutPic").attr("src","./images/about" + t +".png");});
+		$(".aboutPic").fadeOut(1000,function(){$(".aboutPic").css("background-image","url(./images/test" + t +".png");});
 		$(".aboutPic").fadeIn(1000);
 
 	}
@@ -38,7 +38,7 @@ $(function(){
 		}
 		text="#aboutPicLight"+t;
 		$(text).css("background-color","#444444");
-		$(".aboutPic").attr("src","./images/about" + t +".png");
+		$(".aboutPic").css("background-image","url(./images/test" + t +".png");
 		if(t<=2){
 			a=2;
 		}

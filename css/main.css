@@ -69,21 +69,22 @@ header > nav > div > a.last{
 	padding-right:0;
 }
 article{
-	margin-top: 57px;
+	padding-top: 57px;
 	width: 100%;
 	overflow: hidden;
 }
 
-article.Top{
+article#Top{
 	width: 100%;
 	height: 900px;
+	margin-bottom: -23px;
 }
-article.Top >div#Mid{
+article#Top >div#Mid{
 	width: 100%;
 	height: 50%;
 	margin-bottom: -23px;
 }
-article.Top >div#Mid > div#top_pic{
+article#Top >div#Mid > div#top_pic{
 	width: 100%;
 	height: 376px;
 	background-image: url("../images/Top_Pic.png");
@@ -91,112 +92,99 @@ article.Top >div#Mid > div#top_pic{
 	background-repeat: no-repeat;
 
 }
-article.Top >div#Mid >img#myself{
+article#Top >div#Mid >img#myself{
 	width: 259px;
 	height: 259px;
-	margin: -185px 41% 0 40%;
+	margin: -214px 41% 0 40%;
 	border-radius: 100%;
 }
-article.Top >div#Bot{
+article#Top >div#Bot{
 	width: 100%;
 	height: 50%;
 	background-color: #000;
 }
-article.Top >div#Bot > div#Name{
+article#Top >div#Bot > div#Name{
 	width: 269px;
 	height: auto;
 	margin: 0 39.4%;
 }
-article.Top >div#Bot > div#Name > img{
+article#Top >div#Bot > div#Name > img{
 	width: 100%;
 	height: auto;
 	padding-top: 9.7%;
 }
-article.Top >div#Bot > div#edu{
+article#Top >div#Bot > div#edu{
 	width: 100%;
 	height: auto;
 }
-article.Top >div#Bot > div#edu > div#top{
+article#Top >div#Bot > div#edu > div#top{
 	width: 100%;
 	height: 41px;
 }
-article.Top >div#Bot > div#edu > div#top >i{
+article#Top >div#Bot > div#edu > div#top >i{
 	color: #444444;
 	padding-left: 30.5%;
 	line-height: 41px;
 	font-size: 30px;
 	float: left;
 }
-article.Top >div#Bot > div#edu > div#top > h1{
+article#Top >div#Bot > div#edu > div#top > h1{
 	color: #ffffff;
 	font-size: 20px;
 	width: 4.6%;
 	line-height: 41px;
 	float: left;
 }
-article.Top >div#Bot > div#edu >div#bot{
+article#Top >div#Bot > div#edu >div#bot{
 	width: 100%;
 	height: auto;
 	padding-bottom: 60px;
 }
-article.Top >div#Bot > div#edu >div#bot > p{
+article#Top >div#Bot > div#edu >div#bot > p{
 	font-size: 24px;
 	line-height: 40px;
 	padding: 0 20% 0 32.5%;
 }
 
 /* About */
-article.About{
+article#About{
+	width: 100%;
  	height: 942px;
+ 	background-color: #000;
 }
-article.About >div#top{
+
+article#About >div#top{
 	width: 100%;
 	height: 46%;
+	background-image: url("../images/test1.png");
+	background-position: center;
 }
-article.About >div#top >div#header{
+article#About >div#top >div#header{
  	width: 100%;
  	height: 174px;
  	margin: 0 auto;
 }
-article.About >div#top >div#header >img{
+article#About >div#top >div#header >img{
 	width: auto;
 	height: auto;
-	margin: 0 auto 0 auto;
-}
-article.About >div#top >div#Photos{
-	width: auto;
-	height: 262px;
+	margin: 0 auto;
 }
 
-article.About >div#top >div#Photos >div#Photo_border{
-	width: 612px;
-	height: 262px;
-	margin: 0 auto;
-	background-color: #fff;
-	border-radius: 7%;
-}
-article.About >div#top >div#Photos> div#Photo_border> img.aboutPic{
-	width: auto;
-	height: auto;
-	overflow: hidden;
-	margin: 0 auto;
-	border-radius: 7%;
-}
-article.About >div#bot{
+article#About >div#bot{
 	width: 100%;
 	height: 54%;
 	background-color: #000;
 }
-article.About >div#bot >div#footer{
+article#About >div#bot >div#Light{
 	width: 235px;
 	height: auto;
 	margin:  0 auto;
 	padding-top: 0.5%;
 }
-article.About >div#bot >div#footer >a{
+article#About >div#bot >div#Light >a{
 
 }
-article.About >div#bot >div#footer >a >div{
+article#About >div#bot >div#Light >a >div{
 	width: 18px;
 	height: 18px;
 	background-color: #fff;
@@ -204,32 +192,32 @@ article.About >div#bot >div#footer >a >div{
 	float: left;
 	margin: 0 13px;
 }
-article.About >div#bot >div#footer >a >div#aboutPicLight1{
+article#About >div#bot >div#Light >a >div#aboutPicLight1{
 	background-color: #444444;
 }
 
-article.About >div#bot >article{
+article#About >div#bot >article{
 	width: 65%;
 	height: 400px;
 	margin: 0 auto;
 	padding-top: 2%;
 }
 
-article.About >div#bot >article >div#left{
+article#About >div#bot >article >div#left{
 	width: 9.12%;
 	height: 100%;
 	float: left;
 }
-article.About >div#bot >article >div#left >h1{
+article#About >div#bot >article >div#left >h1{
 	font-size: 5vw;
 	line-height: 7vw;
 }
-article.About >div#bot >article >div#right{
+article#About >div#bot >article >div#right{
 	width: 90.88%;
 	height: 100%;
 	float: left;
 }
-article.About >div#bot >article >div#right >p{
+article#About >div#bot >article >div#right >p{
 	font-size: 18px;
 	line-height: 30px;
 	color: #fff;
@@ -237,42 +225,42 @@ article.About >div#bot >article >div#right >p{
 }
 
 /* story*/
-article.Story{
+article#Story{
 	width: 100%;
 	height: 750px;
 }
-article.Story >div#top{
+article#Story >div#top{
 	width: 100%;
 	height: 65%;
 }
-article.Story >div#top >img{
+article#Story >div#top >img{
 	width: auto;
 	height: auto;
 	padding-top:3%;
 	margin: 0 auto;
 }
-article.Story >div#bot{
+article#Story >div#bot{
 	width: 100%;
 	height: 35%;
 	background-color: #000;
 }
-article.Story >div#bot >div{
+article#Story >div#bot >div{
 	width: 79.1%;
 	height: 100%;
 	margin:  0 auto;
 	display: flex;
 }
-article.Story >div#bot >div >div{
+article#Story >div#bot >div >div{
 	width: 300px;
 	height: 100%;
 	margin: 0 auto;
 	align-items: center;
 	transition: transform 0.3s;
 }
-article.Story >div#bot >div >div >a{
+article#Story >div#bot >div >div >a{
 	
 }
-article.Story >div#bot >div >div >a >img{
+article#Story >div#bot >div >div >a >img{
 	margin: -75% auto auto auto;
 	transition: transform 0.3s;
 }
@@ -281,93 +269,102 @@ article.Story >div#bot >div >div >a >img{
 }
 
 /*Skill*/
-article.Skill{
+article#Skill{
 	width: 100%;
-	height: 650px;
+	height: 800px;
 	display: flex;
 	background-color: #000;
 	margin-top: 0;
 }
-article.Skill >div#left{
+article#Skill >div#left{
 	width: 50%;
 	height: 100%;
 	align-items: center;
 }
-article.Skill >div#left >img{
+article#Skill >div#left >img{
 	margin: 0 auto;
 }
-article.Skill >div#left >div{
+article#Skill >div#left >div{
 	margin-top: 3%;
 	margin-left: 25%;
 }
-article.Skill >div#left >div >div#last{
+article#Skill >div#left >div >div#last{
 	margin-top: 1%;
 }
-article.Skill >div#left >div >div#last >h1{
+article#Skill >div#left >div >div#last >h1{
 	width: 230px;
 	font-size: 26px;
 	color: #000;
 	background-color: #fff;
 }
-article.Skill >div#left >div >div>h1{
+article#Skill >div#left >div >div>h1{
 	font-size: 30px;
 	line-height: 40px;
 	color: #fff;
 }
-article.Skill >div#left >div >div>p{
+article#Skill >div#left >div >div>p{
 	font-size: 24px;
 	line-height: 42px;
 	color: #fff;
 }
-article.Skill >div#right{
+article#Skill >div#right{
 	width: 50%;
 	height: 100%;
 	align-items: center;
 }
-article.Skill >div#right >img{
+article#Skill >div#right >img{
 }
 
 /*Project*/
-article.Project{
+article#Project{
 	width: 100%;
 	height: 900px;
 }
-article.Project >div#top{
+article#Project >div#top{
 	width: 100%;
 	height: 40%;
 }
-article.Project >div#top >img{
+article#Project >div#top >img{
 	margin:  0 auto;
 	padding-top: 5%;
 }
-article.Project >div#bot{
+article#Project >div#bot{
 	width: 100%;
 	height: 60%;
 	background-color: #000;
 	display: flex;
 }
-article.Project >div#bot >div#left{
+article#Project >div#bot >div#left{
 	width: 35%;
 	height: 100%;
 }
-article.Project >div#bot >div#left >img{
+article#Project >div#bot >div#left >img{
 	width: 36.4%;
 	height: auto;
 	margin-top: 5%;
 	margin-left: 53%;
 }
-article.Project >div#bot >div#right{
+article#Project >div#bot >div#right{
 	width: 65%;
 	height: 100%;
 	padding-top: 3%;
 }
 
-article.Project >div#bot >div#right >div{}
-article.Project >div#bot >div#right >div >a{}
-article.Project >div#bot >div#right >div >a >p{
+article#Project >div#bot >div#right >div{
+	width: 70%;
+	height: auto;
+	transition: background-color 0.3s;	
+}
+article#Project >div#bot >div#right >div >a{
+
+}
+article#Project >div#bot >div#right >div >a >p{
 	font-size: 2vw;
 	line-height: 4vw;
 	color: #fff;
+}
+.changeColor:hover{
+	background-color: #00ebf4;
 }
 
 footer{
