@@ -7,9 +7,9 @@ function sendMail() {
 	};
     let body = '姓名：' + fields.name + '<br>'+ '電話：' + fields.tel + '<br>';
     Email.send({
-	    SecureToken: "0d21ac27-08bc-4198-afd7-404c61dac6fc",
+	    SecureToken: "a9e5566c-34c4-4004-9925-0f7fbcb06cc1",
 	    To: 'jerrysky866@gmail.com',
-	    From: "410321310@gmail.com",
+	    From: "jerrysky866@gmail.com",
 	    Subject: "test",
 	    Body: body,
     }).then(
