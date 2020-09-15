@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/all.css">
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/smtp.js"></script>
 </head>
 <body>
 	<div id="Web">
@@ -17,6 +18,7 @@
 			<nav>
 				<a href="">jerrysky866</a>
 				<i id="Icon" class="fas fa-gamepad"></i>
+				<a id="menuBtn" ></a>
 				<div>
 					<a class="blue" href="#Top">Top</a>
 					<a href="#About">About me</a>
@@ -28,7 +30,7 @@
 			</nav>
 		</header>
 		<article id="Top">
-			<div id="Mid">
+			<div id="top">
 				<div id="top_pic"></div>
 				<img id="myself" src="images/Myself.png">
 
@@ -163,6 +165,14 @@
 				</div>
 			</div>		
 		</article>
+		<article id="Contact">
+			<form method="post">
+			<input type="text" id="name" placeholder="姓名">
+			<input type="text" id="tel" placeholder="電話">
+			<input type="button" value="送信" onclick="sendMail()">
+		</form>
+		</article>
+		
 		<footer>
 			<div>
 			</div>

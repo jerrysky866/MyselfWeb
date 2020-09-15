@@ -57,13 +57,17 @@ header > nav >i{
 	float: left;
 }
 header >nav >div{
-	width: 37%;
+	width: 506px;
 	height: auto;
 	float: right;
+	margin-right: 5%;
+	display: flex;
 }
 header > nav > div > a{
 	padding: 0 0.8%;
 	color: #fff;
+	align-items: center;
+	margin:  0 auto;
 }
 header > nav > div > a.last{
 	padding-right:0;
@@ -77,25 +81,23 @@ article{
 article#Top{
 	width: 100%;
 	height: 900px;
-	margin-bottom: -23px;
 }
-article#Top >div#Mid{
+article#Top >div#top{
 	width: 100%;
 	height: 50%;
-	margin-bottom: -23px;
 }
-article#Top >div#Mid > div#top_pic{
+article#Top >div#top > div#top_pic{
 	width: 100%;
-	height: 376px;
+	height: 450px;
 	background-image: url("../images/Top_Pic.png");
 	background-position: 50% center;
 	background-repeat: no-repeat;
-
+	background-size: 100%;
 }
-article#Top >div#Mid >img#myself{
+article#Top >div#top >img#myself{
 	width: 259px;
 	height: 259px;
-	margin: -214px 41% 0 40%;
+	margin: -240px 41% 0 40%;
 	border-radius: 100%;
 }
 article#Top >div#Bot{
@@ -111,7 +113,7 @@ article#Top >div#Bot > div#Name{
 article#Top >div#Bot > div#Name > img{
 	width: 100%;
 	height: auto;
-	padding-top: 9.7%;
+	padding-top: 29%;
 }
 article#Top >div#Bot > div#edu{
 	width: 100%;
@@ -149,15 +151,16 @@ article#Top >div#Bot > div#edu >div#bot > p{
 /* About */
 article#About{
 	width: 100%;
- 	height: 942px;
+ 	height: auto;
  	background-color: #000;
 }
 
 article#About >div#top{
 	width: 100%;
-	height: 46%;
+	height:434px;
 	background-image: url("../images/test1.png");
 	background-position: center;
+	background-repeat: no-repeat;
 }
 article#About >div#top >div#header{
  	width: 100%;
@@ -172,7 +175,7 @@ article#About >div#top >div#header >img{
 
 article#About >div#bot{
 	width: 100%;
-	height: 54%;
+	height: auto;
 	background-color: #000;
 }
 article#About >div#bot >div#Light{
@@ -198,7 +201,7 @@ article#About >div#bot >div#Light >a >div#aboutPicLight1{
 
 article#About >div#bot >article{
 	width: 65%;
-	height: 400px;
+	height: auto;
 	margin: 0 auto;
 	padding-top: 2%;
 }
@@ -245,9 +248,9 @@ article#Story >div#bot{
 	background-color: #000;
 }
 article#Story >div#bot >div{
-	width: 79.1%;
+	width: auto;
 	height: 100%;
-	margin:  0 auto;
+	margin:  0 5%;
 	display: flex;
 }
 article#Story >div#bot >div >div{
@@ -367,6 +370,11 @@ article#Project >div#bot >div#right >div >a >p{
 	background-color: #00ebf4;
 }
 
+article#Contact{
+	width: 100%;
+	height: 500px;
+}
+
 footer{
 	width: 100%;
 	height: 90px;
@@ -380,4 +388,37 @@ footer >div{
 	width: 100%;
 	height: 5px;
 	background-color: #00ebf4;
+}
+
+@media screen and (max-width: 1024px){
+	article#Top >div#top{
+		height:43%;
+	}
+	article#Top >div#top > div#top_pic{
+		width: 100%;
+		height: 350px;
+		background-image: url("../images/Top_Pic.png");
+		background-position: 50% center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	article#Top >div#top >img#myself{
+		width: 200px;
+		height: auto;
+		margin: -120px 41% 0 40%;
+		border-radius: 100%;
+	}
+	article#Top >div#Bot{
+		height: 57%;
+	}
+}
+@media screen and (max-width: 640px){
+	#menubtn{
+		display: block;
+		width: 82px;
+		height: 74px;
+		background-image: url("../images/menu.jpg");
+		float: right;
+	}
+	
 }
