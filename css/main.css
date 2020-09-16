@@ -53,6 +53,7 @@ html,body{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 div#allLoad{
 	position: fixed;
 	top: 0;
@@ -82,6 +83,7 @@ header{
 	position: fixed;
 	top: 0;
 	left:0;
+	z-index: 9999;
 }
 header > nav{
 	width: 100%;
@@ -129,16 +131,32 @@ article#Top >div#top{
 }
 article#Top >div#top > div#top_pic{
 	width: 100%;
-	height: 450px;
-	background-image: url("../images/Top_Pic.png");
-	background-position: 50% center;
-	background-repeat: no-repeat;
-	background-size: 100%;
+	height: 180px;
+	padding-top: 55px;
 }
+article#Top >div#top > div#top_pic >img{
+	width: 75%;
+	height: 180px;
+	margin: 0 auto 0 auto;
+	transition: top 2s, height 2s;
+
+	position: fixed;
+	top: 112px;
+	right: 12.5%;
+}
+article#Top >div#top > div#top_pic >img.TopAnimation1{
+	top: 292px;
+	height: 0;
+}
+article#Top >div#top > div#top_pic >img.TopAnimation2{
+	top: -68px;
+	height: 0;
+}
+
 article#Top >div#top >img#myself{
 	width: 259px;
 	height: 259px;
-	margin: -240px 41% 0 40%;
+	margin: 33px 41% 0 40%;
 	border-radius: 100%;
 }
 article#Top >div#Bot{
@@ -154,7 +172,7 @@ article#Top >div#Bot > div#Name{
 article#Top >div#Bot > div#Name > img{
 	width: 100%;
 	height: auto;
-	padding-top: 29%;
+	padding-top: 20%;
 }
 article#Top >div#Bot > div#edu{
 	width: 100%;
@@ -508,24 +526,20 @@ footer >div{
 
 @media screen and (max-width: 1024px){
 	article#Top >div#top{
-		height:43%;
+		height:37%;
 	}
 	article#Top >div#top > div#top_pic{
 		width: 100%;
 		height: 350px;
-		background-image: url("../images/Top_Pic.png");
-		background-position: 50% center;
-		background-repeat: no-repeat;
-		background-size: 100%;
 	}
 	article#Top >div#top >img#myself{
 		width: 200px;
 		height: auto;
-		margin: -120px 41% 0 40%;
+		margin: -180px 41% 0 40%;
 		border-radius: 100%;
 	}
 	article#Top >div#Bot{
-		height: 57%;
+		height: 63%;
 	}
 }
 @media screen and (max-width: 640px){

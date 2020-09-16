@@ -1,7 +1,8 @@
 $(function(){
 
-	var t=1;
+	var t=1, i=1,j=2;
 	var intervalID = setInterval(changePic, 4000);
+	var intervalTopChange = setInterval(TopPicChange,5000);
 
 	function changePic(){
 		t=t+1;
@@ -61,6 +62,34 @@ $(function(){
 	}
 	window.onload=myload;
 	
+
+	function TopPicChange(){
+
+		if(j==3){
+			j=1;
+		}
+		else{
+			j=j+1;
+		}
+		temp="#topPicChange"+j;
+		$(temp).removeClass();
+
+		AniTop="TopAnimation";
+		textTop="#topPicChange" + i;
+		$(textTop).removeClass();
+		$(textTop).addClass('TopAnimation1');
+		if(i==3)
+		{
+			i=1;
+		}
+		else{
+			i=i+1;
+		}
+		textTop="#topPicChange" + i;
+		$(textTop).removeClass();
+		$(textTop).addClass('TopAnimation2');
+		
+	}
 
 
 })
