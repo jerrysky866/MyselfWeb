@@ -56,7 +56,11 @@ $(function(){
 		setTimeout(function(){$(text).css("color","#fff");},4000);
 	});
 
-
+	function myload(){
+		$("#allLoad").fadeOut(3000);
+	}
+	window.onload=myload;
+	
 
 
 })

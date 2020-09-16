@@ -32,6 +32,47 @@ html,body{
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #00ebf4;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+div#allLoad{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background-color: #000;
+}
+div#allLoad >div#loader{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
+
+
+
 header{
 	width: 100%;
 	height: 57px;
@@ -252,12 +293,11 @@ article#Story >div#bot >div{
 	height: 100%;
 	margin:  0 5%;
 	display: flex;
+	justify-content: space-around;
 }
 article#Story >div#bot >div >div{
 	width: 300px;
 	height: 100%;
-	margin: 0 auto;
-	align-items: center;
 	transition: transform 0.3s;
 }
 article#Story >div#bot >div >div >a{
@@ -375,6 +415,7 @@ article#Project >div#bot >div#right >div >a >p{
 article#Contact{
 	width: 100%;
 	height:500px;
+	padding-bottom: 90px;
 }
 article#Contact >div{
 	width: 100%;
@@ -395,19 +436,60 @@ article#Contact > div> form >input{
 	display: flex;
 	align-items: center;
 	margin: 10px auto 0 auto;
-
+	color: #fff;
 }
-article#Contact > div> form >input#content{
+article#Contact > div> form >textarea#content{
+	width: 50%;
 	background: #000093;
 	display: flex;
 	align-items: center;
-	padding-bottom: 10%;
-	margin-top: 10px;
+	padding-bottom: 100px;
+	margin: 10px auto 0 auto;
+	color: #fff;
+	overflow: auto;
 }
 article#Contact > div> form >input#btn{
-	width: 20%;
+	width: auto;
 	color: #fff;
 }
+
+div#confirmWindow{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: auto;
+	margin-top: -235px;
+	margin-left: -150px;
+	display: none;
+	background-color: #238df7;
+	border-radius: 10%;
+	border-color: #fff;
+	border-style: solid;
+}
+div#confirmWindow >div{
+	width: 80%;
+	height: 80%;
+	margin: 10% 10%;
+}
+div#confirmWindow >div >p{
+	overflow: hidden;
+	margin: 5px;
+	line-height: 26px;
+	font-weight: 800;
+}
+div#confirmWindow >div >p#confirmText{
+	word-wrap:break-word
+}
+div#confirmWindow >div >input{
+	width: 55px;
+	height: 25px;
+	margin: 0 25px;
+	background-color: #fff;
+	border-radius: 5%;
+	font-weight: 800;
+}
+
 
 footer{
 	width: 100%;

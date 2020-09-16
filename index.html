@@ -25,7 +25,7 @@
 					<a href="#Story">Story</a>
 					<a href="#Skill">Skill</a>
 					<a href="#Project">Project</a>
-					<a class="blue last" href="">Contact</a>
+					<a class="blue last" href="#Contact">Contact</a>
 				</div>
 			</nav>
 		</header>
@@ -171,18 +171,34 @@
 			</div>
 			<div>
 				<form method="post">
-					<input type="text" id="name" placeholder="姓名">
-					<input type="text" id="tel" placeholder="電話">
-					<input type="text" id="content" placeholder="想告訴我的話">
-					<input type="button" id="btn" value="送信" onclick="sendMail()">
+					<input type="text" id="name" placeholder="Name">
+					<input type="text" id="tel" placeholder="TelPhone">
+					<input type="text" id="email" placeholder="Email address">
+					<textarea id="content" placeholder="About What?"></textarea>
+					<input type="button" id="btn" value="Send Message" onclick="confirmSend()">
 				</form>
 			</div>
 		</article>
-		
+		<div id="confirmWindow">
+			<div>
+				<p id="confirmText"></p>
+				<p>Do you sure to send Email?</p>
+				<input type="button" id="btn" value="Ok" onclick="sendMail()">
+				<input type="button" id="closeConfirm" value="Cancel" onclick="closeConfirm()">
+			</div>
+		</div>
+
 		<footer>
 			<div>
 			</div>
 		</footer>
+
+		<div id="allLoad">
+			<div id="loader">				
+			</div>
+		</div>
+
+
 	</div>
 </body>
 </html>
