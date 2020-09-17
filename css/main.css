@@ -275,7 +275,7 @@ article#About >div#bot >div#Light >a >div#aboutPicLight1{
 }
 
 article#About >div#bot >article{
-	width: 65%;
+	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	padding-top: 2%;
@@ -359,6 +359,7 @@ article#Skill >div#left{
 	align-items: center;
 }
 article#Skill >div#left >img{
+	width: 95%;
 	margin: 0 auto;
 }
 article#Skill >div#left >div{
@@ -446,25 +447,25 @@ article#Project >div#bot >div#right >div >a >p{
 
 /*Contact*/
 
-article#Contact{
+div#Contact{
 	width: 100%;
 	height:500px;
 	padding-bottom: 90px;
 }
-article#Contact >div{
+div#Contact >div{
 	width: 100%;
 	height: auto;
 }
-article#Contact >div >img{
+div#Contact >div >img{
 	width: 50%;
 	height: auto;
 	margin: 0 auto;
 }
-article#Contact >div >form{
+div#Contact >div >form{
 	width: 100%;
 	height: 200px;
 }
-article#Contact > div> form >input{
+div#Contact > div> form >input{
 	width: 50%;
 	background: #000093;
 	display: flex;
@@ -472,7 +473,7 @@ article#Contact > div> form >input{
 	margin: 10px auto 0 auto;
 	color: #fff;
 }
-article#Contact > div> form >textarea#content{
+div#Contact > div> form >textarea#content{
 	width: 50%;
 	background: #000093;
 	display: flex;
@@ -482,7 +483,7 @@ article#Contact > div> form >textarea#content{
 	color: #fff;
 	overflow: auto;
 }
-article#Contact > div> form >input#btn{
+div#Contact > div> form >input#btn{
 	width: auto;
 	color: #fff;
 }
@@ -684,13 +685,100 @@ footer >div{
 		width: 85%
 	}
 	article#Top >div#Bot >div#edu >div#bot >p{
-		font-size: 5.85vw;
+		font-size: 6vw;
 		line-height: 9.73vw;
 	}
 
+	article#About >div#top{
+	width: 100%;
+	height:250px;
+	background-image: url("../images/test1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+	article#About >div#bot >article >div#left{
+		width: 10%;
+		height: 100%;
+		float: left;
+	}
+	article#About >div#bot >article >div#left >h1{
+		font-size: 7vw;
+		line-height: 10vw;
+	}
+	article#About >div#bot >article >div#right{
+		width: 85%;
+		height: 100%;
+		float: left;
+	}
+	article#About >div#bot >article >div#right >p{
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 14px;
+	}
+	article#Story{
+		height: 1280px;
+	}
+	article#Story >div#top{
+		height: 135px;
+	}
+	article#Story >div#top >img{
+		width: 95%;
+	}
+	article#Skill >div#left >div {
+		margin: 3% auto 0 auto;
+	}
+	article#Skill >div#left >div >div{
+		width: 85%;
+		margin: 0 auto;
+	}
+	article#Skill >div#left >div >div>h1 {
+		margin-top: 5px;
+		font-size: 26px;
+	}
+	article#Skill >div#left >div >div>p {
+		font-size: 3.88vw;
+		line-height: 24px;
+	}
+	article#Project >div#top{
+		height: 35%;
+	}
+	article#Project >div#top >img{
+		width: 95%;
+	}
+	article#Project >div#bot{
+		height: 65%;
+	}
+	article#Project >div#bot >div#left{
+		width: 0;
+	}
+	article#Project >div#bot >div#right{
+		width: 90%;
+		margin: 0 auto;
+	}
+	article#Project >div#bot >div#right >div{	
+		margin: 3px auto;
+		padding-left: 5%;
+	}
+	article#Project >div#bot >div#right >div >a >p{
+		font-size: 16px;
+	}
 
-
-
+	div#Contact{
+		padding-top: 20px;
+		padding-bottom: 90px;
+	}
+	div#Contact >div#top >img{
+		width: 85%;
+		height: auto;
+		margin: 0 auto;
+	}
+	div#Contact >div >form >input{
+		width: 70%;
+	}
+	div#Contact >div >form >textarea#content{
+		width: 70%;
+	}
 
 }
 
