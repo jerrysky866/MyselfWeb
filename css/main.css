@@ -37,8 +37,8 @@ html,body{
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #00ebf4;
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
@@ -61,6 +61,7 @@ div#allLoad{
 	width: 100%;
 	height: 1000px;
 	background-color: #000;
+	z-index: 9999;
 }
 div#allLoad >div#loader{
 	width: 100px;
@@ -83,18 +84,29 @@ header{
 	position: fixed;
 	top: 0;
 	left:0;
-	z-index: 9999;
+	z-index: 5000;
 }
 header > nav{
 	width: 100%;
 	height: 57px;
-	overflow: hidden;
+/* 	overflow: hidden; */
 	background-color: #000;
 }
 header > nav >a{
 	color: #fff;
 	padding-left: 9.7%;
 	float: left;
+}
+header > nav >a#menuBtn{
+	display: none;
+	float: right;
+}
+header > nav >a#menuBtn >div{
+	width: 82px;
+	height: 57px;
+	background-image: url("../images/menu.png");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 header > nav >i{
 	float: left;
@@ -105,11 +117,12 @@ header >nav >div{
 	float: right;
 	margin-right: 5%;
 	display: flex;
+	align-items: center;
+	background-color: #000;
 }
 header > nav > div > a{
 	padding: 0 0.8%;
 	color: #fff;
-	align-items: center;
 	margin:  0 auto;
 }
 header > nav > div > a.last{
@@ -133,31 +146,35 @@ article#Top >div#top > div#top_pic{
 	width: 100%;
 	height: 180px;
 	padding-top: 55px;
+	position: relative;
 }
 article#Top >div#top > div#top_pic >img{
 	width: 75%;
 	height: 180px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 	transition: top 2s, height 2s;
 
-	position: fixed;
-	top: 112px;
+	position: absolute;
+	top: 55px;
 	right: 12.5%;
+	z-index: 1000;
 }
 article#Top >div#top > div#top_pic >img.TopAnimation1{
-	top: 292px;
+	top: 235px;
 	height: 0;
 }
 article#Top >div#top > div#top_pic >img.TopAnimation2{
-	top: -68px;
+	top: 125px;
 	height: 0;
 }
 
 article#Top >div#top >img#myself{
 	width: 259px;
 	height: 259px;
-	margin: 33px 41% 0 40%;
+	margin: 33px auto 0 auto;
 	border-radius: 100%;
+	position: relative;
+	z-index: 2000;
 }
 article#Top >div#Bot{
 	width: 100%;
@@ -167,7 +184,7 @@ article#Top >div#Bot{
 article#Top >div#Bot > div#Name{
 	width: 269px;
 	height: auto;
-	margin: 0 39.4%;
+	margin: 0 auto;
 }
 article#Top >div#Bot > div#Name > img{
 	width: 100%;
@@ -179,12 +196,12 @@ article#Top >div#Bot > div#edu{
 	height: auto;
 }
 article#Top >div#Bot > div#edu > div#top{
-	width: 100%;
+	width: 603px;
 	height: 41px;
+	margin: 0 auto;
 }
 article#Top >div#Bot > div#edu > div#top >i{
 	color: #444444;
-	padding-left: 30.5%;
 	line-height: 41px;
 	font-size: 30px;
 	float: left;
@@ -197,14 +214,13 @@ article#Top >div#Bot > div#edu > div#top > h1{
 	float: left;
 }
 article#Top >div#Bot > div#edu >div#bot{
-	width: 100%;
+	width: 527px;
 	height: auto;
-	padding-bottom: 60px;
+	margin: 0 auto;
 }
 article#Top >div#Bot > div#edu >div#bot > p{
 	font-size: 24px;
 	line-height: 40px;
-	padding: 0 20% 0 32.5%;
 }
 
 /* About */
@@ -529,26 +545,154 @@ footer >div{
 		height:37%;
 	}
 	article#Top >div#top > div#top_pic{
-		width: 100%;
-		height: 350px;
+		padding-top: 0;
 	}
+
+	article#Top >div#top > div#top_pic >img{
+		height: 120px;
+		margin: 0 auto 0 auto;
+		transition: top 2s, height 2s;
+
+		position: absolute;
+		top: 112px;
+		right: 12.5%;
+	}
+	article#Top >div#top > div#top_pic >img.TopAnimation1{
+		top: 292px;
+		height: 0;
+	}
+	article#Top >div#top > div#top_pic >img.TopAnimation2{
+		top: -68px;
+		height: 0;
+	}
+
 	article#Top >div#top >img#myself{
 		width: 200px;
 		height: auto;
-		margin: -180px 41% 0 40%;
+		margin: -25px auto 0 auto;
 		border-radius: 100%;
 	}
 	article#Top >div#Bot{
 		height: 63%;
-	}
+	}	
 }
-@media screen and (max-width: 640px){
-	#menubtn{
-		display: block;
-		width: 82px;
-		height: 74px;
-		background-image: url("../images/menu.jpg");
-		float: right;
+@media screen and (max-width: 768px){
+	.menuOpen{
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-right: 0;
+		margin-right: 0;
 	}
+	header> nav >a#menuBtn{
+		display: block;
+	}
+	header> nav >div{
+		padding-right: 0;
+		display: none;
+	}
+
+	article#About >div#top{
+		height: 360px;
+	}	
+	article#About >div#top >div#header >img{
+		width: 90%;
+	}
+	article#Story{
+		height: 1330px;
+	}	
+	article#Story >div#top{
+		height: 185px;
+	}
+	article#Story >div#bot{
+		height: 1050px;
+		background-color: transparent;
+	}
+	article#Story >div#bot >div{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	article#Story >div#bot >div >div{
+		width: 300px;
+		height: auto;
+		margin: 0 auto 0 auto;
+	}
+	article#Story >div#bot >div >div >a >img{
+		margin: 0 auto;
+	}
+	article#Skill > div#left{
+		width: 100%
+	}
+	article#Skill > div#right{
+		width: 0%;
+		overflow: hidden;
+	}
+	article#Project{
+		height: 700px;
+	}
+	article#Project >div#top{
+		height: 50%;
+	}
+	article#Project >div#top{
+		padding-top: 0;
+	}
+	article#Project >div#bot >div#right >div{
+		width: 100%;
+	}
+	article#Project >div#bot >div#right >div >a >p{
+		font-size: 20px;
+		line-height: 35px;
+	}
+
+@media screen and (max-width: 420px){
 	
+	header >nav >div >a{
+		font-size: 16px;
+	}
+	article#Top{
+		height: 650px;
+	}
+	article#Top >div#top{
+		height: 25%;
+	}
+	article#Top >div#top > div#top_pic >img{
+		top: 3px;
+	}
+	article#Top >div#top > div#top_pic >img.TopAnimation1{
+		top: 183px;
+	}
+	article#Top >div#top > div#top_pic >img.TopAnimation2{
+		top: -177px;
+	}
+
+	article#Top >div#top >img#myself{
+		width: 150px;
+		height: auto;
+		margin: -75px auto 0 auto;
+	}
+	article#Top >div#Bot{
+		height: 75%
+	}
+	article#Top >div#Bot >div#Name >img{
+		padding-top: 42%;
+	}
+	article#Top >div#Bot >div#edu >div#top{
+		width: 90%;
+	}
+	article#Top >div#Bot >div#edu >div#bot{
+		width: 85%
+	}
+	article#Top >div#Bot >div#edu >div#bot >p{
+		font-size: 5.85vw;
+		line-height: 9.73vw;
+	}
+
+
+
+
+
+}
+
+
 }

@@ -91,5 +91,15 @@ $(function(){
 		
 	}
 
+	$("#menuBtn").on('click',function(){
+		if($("#menu").hasClass('menuOpen')){
+			$("#menu").removeClass('menuOpen');
+			$('article').css("padding-top","57px");
+		}
+		else{
+			$("#menu").addClass('menuOpen');
+			$('article').css("padding-top","114px");			
+		}
+	});
 
 })
