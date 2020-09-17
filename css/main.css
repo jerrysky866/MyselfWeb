@@ -359,7 +359,7 @@ article#Skill >div#left{
 	align-items: center;
 }
 article#Skill >div#left >img{
-	width: 95%;
+	width: 60%;
 	margin: 0 auto;
 }
 article#Skill >div#left >div{
@@ -450,6 +450,7 @@ article#Project >div#bot >div#right >div >a >p{
 div#Contact{
 	width: 100%;
 	height:500px;
+	padding-top: 50px;
 	padding-bottom: 90px;
 }
 div#Contact >div{
