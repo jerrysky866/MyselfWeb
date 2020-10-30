@@ -134,4 +134,14 @@ $(function(){
 		$(text).addClass("prepare");
 	}
 
+	$(".readStory").on('click',function(){
+		$("#StoryBoard").show();
+	});
+	$(".Xclose").on('click',function(){
+		$("#StoryBoard").hide();
+	});
+
+	$.get("StoryHtml1.html",function(data){
+		$("#StoryHtml").html(data);
+	});
 })

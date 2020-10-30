@@ -1,0 +1,311 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+        html_form
+    </title>
+    </head>
+    <body>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>文字欄位</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;input type=text&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>文字輸入方塊</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;textarea&gt;<br>&lt;/textarea&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>下拉式選項</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;select&gt;<br> &emsp;&lt;option&gt;<br>&lt;/select&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>多選核取方塊</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;input type=checkbox&gt;</p>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>單選核取方塊</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;input type=radio&gt;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%" align="left">
+                                <p>按鈕</p>
+                            </td>
+                            <td width="50%" align="left">
+                                <p>&lt;input type=submit&gt;<br>&lt;input type=reset&gt;<br>&lt;input type=button&gt;</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <br><hr>
+        <p>文字欄位</p>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    &lt;form&gt;<br>
+                                    在此輸入文字&lt;input type=text name=textfield value="預設文字"&gt;<br>   
+                                    &lt;/form&gt;<br>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                                    <form>
+                                     在此輸入文字<input type=text name=textfield value="預設文字">   
+                                    </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <hr>
+        <p>文字輸入方塊</p>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                &lt;form&gt;
+                                在此輸入文字:&lt;br&gt;<br>
+                                &lt;textarea cols=60 rows=6 name=textBlock&gt;
+                                預設文字<br>
+                                &lt;/textarea&gt;<br>
+                                &lt;/form&gt;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form> 在此輸入文字:<br>
+                                <textarea cols=60 rows=6 name=textBlock>預設文字
+                                </textarea>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <hr>
+        <p>下拉式表單</p>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                &lt;form&gt;<br>
+                                &lt;select&gt;<br>
+                                &lt;option&gt;國小<br>
+                                &lt;option&gt;國中<br>
+                                &lt;option&gt;高中<br>
+                                &lt;option&gt;大學<br>
+                                &lt;/select&gt;<br>
+                                &lt;/form&gt;
+                            </td>
+                            <td>
+                                <form>
+                                <select>
+                                <option>國小
+                                <option>國中
+                                <option>高中
+                                <option>大學
+                                </select>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>       
+            </center>
+        </div>
+        <hr>
+        <p>多核選取</p>
+        <div aligm="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                &lt;form&gt;<br>
+                                &lt;input type=checkbox name=interest&gt;網站管理員<br>
+                                &lt;input type=checkbox name=interest&gt;行銷專員<br>
+                                &lt;input type=checkbox name=interest&gt;會計師<br>
+                                &lt;input type=checkbox name=interest&gt;工程師<br>
+                                &lt;input type=checkbox name=interest&gt;補教名師<br>
+                                &lt;/form&gt;
+                            </td>
+                            <td>
+                                <form>
+                                <input type=checkbox name=interest>網站管理員<br>
+                                <input type=checkbox name=interest>行銷專員<br>
+                                <input type=checkbox name=interest>會計師<br>
+                                <input type=checkbox name=interest>工程師<br>
+                                <input type=checkbox name=interest>補教名師<br>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <hr>
+        <p>單選核取</p>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                &lt;form&gt;<br>
+                                &lt;input type=radio name=job&gt;資訊<br>
+                                &lt;input type=radio name=job&gt;金融<br>
+                                &lt;input type=radio name=job&gt;保險<br>
+                                &lt;input type=radio name=job&gt;製造<br>
+                                &lt;input type=radio name=job&gt;貿易<br>
+                                &lt;/form&gt;
+                            </td>
+                            <td>                              
+                                <form>
+                                <input type=radio name=job>資訊
+                                <input type=radio name=job>金融
+                                <input type=radio name=job>保險
+                                <input type=radio name=job>製造
+                                <input type=radio name=job>貿易
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <hr>
+        <p>按鈕</p>
+        <div align="cemter">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                執行
+                            </td>
+                            <td>
+                                &lt;input type=submit&gt;
+                            </td>
+                            <td>
+                                執行由action後指定的程式
+                            </td>
+                            <td>
+                                <input type=submit>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                取消
+                            </td>
+                            <td>
+                                &lt;input type=reset&gt;
+                            </td>
+                            <td>
+                                還原表單內的資料為內定植
+                            </td>
+                            <td>
+                                <input type=reset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                一般
+                            </td>
+                            <td>
+                                &lt;input type=button&gt;
+                            </td>
+                            <td>
+                                使用者自行設計的按鈕
+                            </td>
+                            <td>
+                                <input type=button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <hr>
+        <p>實驗</p>
+        <div align="center">
+            <center>
+                <table cellspacing="1" width="75%" border="1">
+                    <tr>
+                        <td>
+                            &lt;form method="post" action="mailto:jerrysky866@gmail.com?subject=test" enctype="text/plain"&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form method="post" action="mailto:jerrysky866@gmail.com?subject=test" enctype="multipart/form-data" >
+
+                            姓名<input type=text name=textfield value="預設文字"><br>
+                            學歷:<br>
+                                <select>
+                                <option>國小
+                                <option>國中
+                                <option>高中
+                                <option>大學
+                                </select>
+                            志向:<br>
+                                <input type=checkbox name=interest value=網站管理員>網站管理員<br>
+                                <input type=checkbox name=interest value=行銷專員>行銷專員<br>
+                                <input type=checkbox name=interest value=會計師>會計師<br>
+                                <input type=checkbox name=interest value=工程師>工程師<br>
+                                <input type=checkbox name=interest value=補教名師>補教名師<br>
+                            工作:<br>
+                                <input type=radio name=job value=資訊>資訊
+                                <input type=radio name=job value=金融>金融
+                                <input type=radio name=job value=保險>保險
+                                <input type=radio name=job value=製造>製造
+                                <input type=radio name=job value=貿易>貿易
+                            想說的話:<br>
+                                <textarea type=textarea name="comment" row=8 cols=60 wrap=physical>想說的話
+                                </textarea>
+                                <br>
+                            <input type=submit value="寄出"><input type=reset value="重寫">
+                                <br>
+                            </form>    
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </body>
+</html>
