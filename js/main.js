@@ -104,44 +104,44 @@ $(function(){
 
 	var IntervalfooterText = setInterval(footerText,5500);
 	var s=1;
-	// function footerText(){
+	function footerText(){
 
-	// 	text="#f" + s;
-	// 	$(text).removeClass();
-	// 	$(text).addClass("goOut");
-	// 	if(s==6){
-	// 		s=1;
-	// 	}
-	// 	else{
-	// 		s=s+1;
-	// 	}
-	// 	text="#f" + s;
-	// 	$(text).removeClass();
-	// 	$(text).addClass("showText");
-	// 	h=s+1;
-	// 	if(h>6){
-	// 		h=h-6
-	// 	}
-	// 	text="#f" + h;
-	// 	$(text).removeClass();
-	// 	$(text).addClass("goIn");
-	// 	h=s+2;
-	// 	if(h>6){
-	// 		h=h-6;
-	// 	}
-	// 	text="#f" + h;
-	// 	$(text).removeClass();
-	// 	$(text).addClass("prepare");
-	// }
+		text="#f" + s;
+		$(text).removeClass();
+		$(text).addClass("goOut");
+		if(s==6){
+			s=1;
+		}
+		else{
+			s=s+1;
+		}
+		text="#f" + s;
+		$(text).removeClass();
+		$(text).addClass("showText");
+		h=s+1;
+		if(h>6){
+			h=h-6
+		}
+		text="#f" + h;
+		$(text).removeClass();
+		$(text).addClass("goIn");
+		h=s+2;
+		if(h>6){
+			h=h-6;
+		}
+		text="#f" + h;
+		$(text).removeClass();
+		$(text).addClass("prepare");
+	}
 
-	$(".readStory").on('click',function(){
-		$("#StoryBoard").show();
-	});
-	$(".Xclose").on('click',function(){
-		$("#StoryBoard").hide();
-	});
+	// $(".readStory").on('click',function(){
+	// 	$("#StoryBoard").show();
+	// });
+	// $(".Xclose").on('click',function(){
+	// 	$("#StoryBoard").hide();
+	// });
 
-	$.get("StoryHtml1.html",function(data){
-		$("#StoryHtml").html(data);
-	});
+	// $.get("StoryHtml1.html",function(data){
+	// 	$("#StoryHtml").html(data);
+	// });
 })
